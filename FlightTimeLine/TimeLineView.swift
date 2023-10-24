@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimeLineView: UIViewControllerRepresentable {
+struct TimelineView: UIViewControllerRepresentable {
     let flights: [FlightInformation]
     
     func makeUIViewController(context: Context) -> UITableViewController {
@@ -16,22 +16,23 @@ struct TimeLineView: UIViewControllerRepresentable {
     
     func updateUIViewController(_ uiViewController: UITableViewController, context: Context) {
         let timeLineTableViewCell = UINib(
-            nibName: "TimeLineTableViewCell",
+            nibName: "TimelineTableViewCell",
             bundle: nil
         )
         
         uiViewController.tableView.register(
             timeLineTableViewCell,
-            forCellReuseIdentifier: "TimeLineTableViewCell"
+            forCellReuseIdentifier: "TimelineTableViewCell"
         )
+        uiViewController.tableView.dataSource = context.coordinator
     }
     
-    func makeCoordinator() -> Coordinator {
+    func makeCoordinator() -> TimelineView.Coordinator {
         Coordinator(flights: flights)
     }
 }
 
-extension TimeLineView{
+extension TimelineView {
     class Coordinator: NSObject, UITableViewDataSource {
         let flights: [FlightInformation]
         
@@ -53,7 +54,7 @@ extension TimeLineView{
             let currentString = dateFormatter.string(from: flight.currentTime ?? flight.scheduledTime)
             
             guard
-                let cell = tableView.dequeueReusableCell(withIdentifier: "TimeLineTableViewCell", for: indexPath) as? TimelineTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineTableViewCell", for: indexPath) as? TimelineTableViewCell
             else { return UITableViewCell() }
             
             var flightInfo = "\(flight.airline) \(flight.number)"
@@ -76,12 +77,11 @@ extension TimeLineView{
             
             return cell
         }
-
     }
 }
 
-struct TimeLineView_Previews: PreviewProvider {
+struct TimelineView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeLineView(flights: FlightInformation.generateFlights())
+        TimelineView(flights: FlightInformation.generateFlights())
     }
 }
