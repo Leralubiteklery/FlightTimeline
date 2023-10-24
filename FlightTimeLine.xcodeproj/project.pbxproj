@@ -11,6 +11,9 @@
 		EDE092202AE83349008A2727 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0921F2AE83349008A2727 /* ContentView.swift */; };
 		EDE092222AE8334B008A2727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE092212AE8334B008A2727 /* Assets.xcassets */; };
 		EDE092252AE8334B008A2727 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE092242AE8334B008A2727 /* Preview Assets.xcassets */; };
+		EDE0922C2AE8348C008A2727 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0922B2AE8348C008A2727 /* TimeLineView.swift */; };
+		EDE0922F2AE83626008A2727 /* FlightInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0922E2AE83626008A2727 /* FlightInformation.swift */; };
+		EDE092312AE8362C008A2727 /* FlightHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE092302AE8362C008A2727 /* FlightHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		EDE0921F2AE83349008A2727 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDE092212AE8334B008A2727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDE092242AE8334B008A2727 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDE0922B2AE8348C008A2727 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
+		EDE0922E2AE83626008A2727 /* FlightInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInformation.swift; sourceTree = "<group>"; };
+		EDE092302AE8362C008A2727 /* FlightHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,12 @@
 		EDE0921C2AE83349008A2727 /* FlightTimeLine */ = {
 			isa = PBXGroup;
 			children = (
+				EDE0922D2AE835FF008A2727 /* Models */,
 				EDE0921D2AE83349008A2727 /* FlightTimeLineApp.swift */,
 				EDE0921F2AE83349008A2727 /* ContentView.swift */,
 				EDE092212AE8334B008A2727 /* Assets.xcassets */,
 				EDE092232AE8334B008A2727 /* Preview Content */,
+				EDE0922B2AE8348C008A2727 /* TimeLineView.swift */,
 			);
 			path = FlightTimeLine;
 			sourceTree = "<group>";
@@ -65,6 +73,15 @@
 				EDE092242AE8334B008A2727 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDE0922D2AE835FF008A2727 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDE092302AE8362C008A2727 /* FlightHistory.swift */,
+				EDE0922E2AE83626008A2727 /* FlightInformation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE092202AE83349008A2727 /* ContentView.swift in Sources */,
+				EDE0922C2AE8348C008A2727 /* TimeLineView.swift in Sources */,
+				EDE0922F2AE83626008A2727 /* FlightInformation.swift in Sources */,
 				EDE0921E2AE83349008A2727 /* FlightTimeLineApp.swift in Sources */,
+				EDE092312AE8362C008A2727 /* FlightHistory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
