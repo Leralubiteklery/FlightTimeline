@@ -14,6 +14,10 @@
 		EDE0922C2AE8348C008A2727 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0922B2AE8348C008A2727 /* TimeLineView.swift */; };
 		EDE0922F2AE83626008A2727 /* FlightInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0922E2AE83626008A2727 /* FlightInformation.swift */; };
 		EDE092312AE8362C008A2727 /* FlightHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE092302AE8362C008A2727 /* FlightHistory.swift */; };
+		EDE092382AE837D5008A2727 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE092332AE837D5008A2727 /* TimelineTableViewCell.swift */; };
+		EDE092392AE837D5008A2727 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE092342AE837D5008A2727 /* Timeline.swift */; };
+		EDE0923A2AE837D5008A2727 /* TimelinePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE092362AE837D5008A2727 /* TimelinePoint.swift */; };
+		EDE0923B2AE837D5008A2727 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE092372AE837D5008A2727 /* TimelineTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,11 @@
 		EDE0922B2AE8348C008A2727 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
 		EDE0922E2AE83626008A2727 /* FlightInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInformation.swift; sourceTree = "<group>"; };
 		EDE092302AE8362C008A2727 /* FlightHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightHistory.swift; sourceTree = "<group>"; };
+		EDE092332AE837D5008A2727 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		EDE092342AE837D5008A2727 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		EDE092352AE837D5008A2727 /* TimelineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineTableViewCell.h; sourceTree = "<group>"; };
+		EDE092362AE837D5008A2727 /* TimelinePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePoint.swift; sourceTree = "<group>"; };
+		EDE092372AE837D5008A2727 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 				EDE092212AE8334B008A2727 /* Assets.xcassets */,
 				EDE092232AE8334B008A2727 /* Preview Content */,
 				EDE0922B2AE8348C008A2727 /* TimeLineView.swift */,
+				EDE092322AE837D5008A2727 /* TimelineTableViewCell */,
 			);
 			path = FlightTimeLine;
 			sourceTree = "<group>";
@@ -82,6 +92,18 @@
 				EDE0922E2AE83626008A2727 /* FlightInformation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EDE092322AE837D5008A2727 /* TimelineTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EDE092332AE837D5008A2727 /* TimelineTableViewCell.swift */,
+				EDE092342AE837D5008A2727 /* Timeline.swift */,
+				EDE092352AE837D5008A2727 /* TimelineTableViewCell.h */,
+				EDE092362AE837D5008A2727 /* TimelinePoint.swift */,
+				EDE092372AE837D5008A2727 /* TimelineTableViewCell.xib */,
+			);
+			path = TimelineTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE092252AE8334B008A2727 /* Preview Assets.xcassets in Resources */,
+				EDE0923B2AE837D5008A2727 /* TimelineTableViewCell.xib in Resources */,
 				EDE092222AE8334B008A2727 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,10 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE092202AE83349008A2727 /* ContentView.swift in Sources */,
+				EDE092392AE837D5008A2727 /* Timeline.swift in Sources */,
 				EDE0922C2AE8348C008A2727 /* TimeLineView.swift in Sources */,
 				EDE0922F2AE83626008A2727 /* FlightInformation.swift in Sources */,
 				EDE0921E2AE83349008A2727 /* FlightTimeLineApp.swift in Sources */,
+				EDE092382AE837D5008A2727 /* TimelineTableViewCell.swift in Sources */,
 				EDE092312AE8362C008A2727 /* FlightHistory.swift in Sources */,
+				EDE0923A2AE837D5008A2727 /* TimelinePoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
