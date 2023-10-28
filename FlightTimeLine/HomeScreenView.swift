@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeScreenVie: View {
+struct HomeScreenView: View {
     var body: some View {
         Image(systemName: "airplane")
             .resizable()
@@ -17,8 +17,8 @@ struct HomeScreenVie: View {
     }
 }
 
-struct HomeScreenVie_Previews: PreviewProvider {
+struct HomeScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreenVie()
+        HomeScreenView()
     }
 }
