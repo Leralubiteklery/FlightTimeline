@@ -24,7 +24,7 @@ struct FlightRowView: View {
             }
             .foregroundColor(.black)
             .sheet(isPresented: $isPresented) {
-                FlightDetailsView(flight: flight)
+                FlightDetailsView(isPresented: $isPresented, flight: flight)
             }
         }
     }
