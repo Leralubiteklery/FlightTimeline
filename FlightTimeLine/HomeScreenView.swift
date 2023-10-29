@@ -21,10 +21,16 @@ struct HomeScreenView: View {
                 
                 VStack (alignment: .leading, spacing: 10){
                     NavigationLink("Arrivals") {
-                        FlightBoardView(boardName: "Arrivals")
+                        FlightBoardView(
+                            boardName: "Arrivals",
+                            flightInfo: flightInfo.filter { $0.direction == .arrival}
+                        )
                     }
                     NavigationLink("Departures") {
-                        FlightBoardView(boardName: "Departures")
+                        FlightBoardView(
+                            boardName: "Departures",
+                            flightInfo: flightInfo.filter { $0.direction == .departure}
+                        )
                     }
                     NavigationLink("Flight Timeline") {
                         TimelineView(flights: flightInfo)
