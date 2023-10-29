@@ -16,9 +16,6 @@ struct FlightDetailsView: View {
                 Text("\(flight.airline) \(flight.number)")
                     .font(.largeTitle)
                 Spacer()
-                Button("Done") {
-//                    add button functionality
-                }
             }
                 Text("\(flight.direction == .arrival ? "From: " : "To: ") \(flight.otherAirport)")
                 .foregroundColor(.black)

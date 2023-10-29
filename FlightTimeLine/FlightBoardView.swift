@@ -12,13 +12,14 @@ struct FlightBoardView: View {
     let flightInfo: [FlightInformation]
     
     var body: some View {
-            List(flightInfo) { flight in
+        List(flightInfo) { flight in
+            NavigationLink(destination: FlightDetailsView(flight: flight)) {
                 FlightRowView(flight: flight)
             }
-            .navigationTitle(boardName)
         }
-       
+        .navigationTitle(boardName)
     }
+}
 
 struct FlightBoardView_Previews: PreviewProvider {
     static var previews: some View {
