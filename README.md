@@ -1,7 +1,7 @@
 # FlightTimeline
 
 This is a study project written in SwiftUI. App shows arrivals / departures board of an airport with mock data. 
-Among functionalities that have been eplored during development of this app were:
+Among functionalities that have been explored during development of this app were:
 - integration of UIKit framework into SwiftUI app - TimelineTableViewCell.
 - Different ways of naviagtion between screens.  
 
